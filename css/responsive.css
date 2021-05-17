@@ -1,0 +1,74 @@
+@media(max-width:425px){
+    /* Header Part Responsive Code */
+    .banner-content h1{
+        font-size:26px;
+    }
+    .banner-content p{
+        font-size: 14px;
+    }
+    nav .fas>fa-bars{
+        display: block;
+    }
+    .banner-content a{
+        font-size: 14px;
+        padding:10px 22px;
+    }
+    .nav-links{
+        position: absolute;
+        background:#f44336;
+        height: 100vh;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+        text-align: left;
+        transition: 1s;
+        overflow: hidden;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links ul{
+        padding-left: 30px;
+    }
+    nav .fas{
+        display: block;
+        color:#fff;
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    /* Course Section Responsive Code */
+    .heading-text h2{
+        font-size: 24px;
+    }
+    .heading-text p{
+        font-size: 14px;
+    }
+    .row{
+        flex-direction: column;
+        grid-gap:20px
+    }
+    .course-column{
+        padding:30px 20px;
+    }
+    .course-column h3{
+        font-size: 22px;
+    }
+    .course-column p{
+        font-size: 14px;
+    }
+
+    /* Campus Section Responsive Code */
+    .campus-position h3{
+        font-size: 22px;
+    }
+    /* Facilities Section Responsive Code */
+    .facilities-column h3{
+        font-size: 24px;
+    }
+    .facilities-column p{
+        font-size: 14px;
+    }
+}

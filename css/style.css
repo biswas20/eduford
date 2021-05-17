@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html, body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+/* Header Section Css */
+.header{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    padding:2% 6%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align:right;
+}
+.nav-links ul li{
+    position: relative;
+    display: inline-block;
+    list-style:none;
+    padding:8px 12px;
+    margin-right: 25px;
+}
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background:#f44336;
+    display:block;
+    margin:auto;
+    transition: all .3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav .fas{
+    display: none;
+}
+
+.banner-content{
+    color: #fff;
+    width: 90%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+.banner-content h1{
+    font-size:52px;
+    margin-bottom: 20px;
+}
+.banner-content h1 span{
+    color:#f44336;
+}
+.banner-content p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.banner-content a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration:none;
+    padding:16px 34px;
+    background:#f44336;
+    display: inline-block;
+    border-radius:4px;
+    transition: all .3s;
+    border:1px solid transparent;
+    font-weight: 500;
+}
+.banner-content a:hover{
+    border-color:#f44336;
+    color:#f44336;
+    
+    background: transparent;
+}
+/* Course Section Css */
+.course,.campus,.facilities{
+    padding-top: 80px;
+}
+.heading-text{
+    width: 80%;
+    text-align: center;
+    margin:auto
+}
+.heading-text h2{
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.heading-text p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #777;
+    line-height: 22px;
+}
+.row{
+    width: 80% ;
+    display:flex;
+    margin: 60px auto;
+    justify-content:space-between;
+    align-items:center;
+}
+.course-column{
+    flex-basis: 31%;
+    background:#fff3f3;
+    padding:40px 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+
+.course-column h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.course-column p{
+    font-size: 16px;
+    line-height:1.6;
+    font-weight: 400;
+    color:#777;
+    margin-bottom: 20px;
+}
+
+/* Campus Section Css */
+.campus-column{
+    position: relative;
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.campus-column img{
+    width: 100%;
+    display:block;   
+    transform: scale(1);
+    transition: all .3s;
+}
+.campus-column:hover img{
+    transform: scale(1.2);
+}
+.campus-position{
+    background:transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: all .3s;
+}
+.campus-position:hover{
+    background:rgba(226,0,0,0.7);
+}
+.campus-position h3{
+    position: absolute;
+    font-size: 26px;
+    font-weight: 500;
+    color:#fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .3s;
+}
+.campus-position:hover h3{
+    opacity: 1;
+    bottom:49%;
+}
+
+/* Facilitices Section */
+.facilities-column{
+    flex-basis: 31%;
+
+}
+.facilities-column img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.facilities-column h3{
+    color:#222;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.facilities-column p{
+    color: #777;
+    font-size: 16px;
+    line-height:1.6;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.read-btn{
+    color:#f44336;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    transition: all .3s;
+}
+.read-btn:hover{
+    padding-left: 15px;
+}
